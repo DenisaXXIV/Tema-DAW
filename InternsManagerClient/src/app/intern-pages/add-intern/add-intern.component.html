@@ -1,0 +1,32 @@
+<div id="addPage">
+    <div id="add">
+      <h1>Add Intern</h1>
+      <div class="form">
+
+        <mat-form-field appearance="fill">
+          <mat-label>Person</mat-label>
+          <mat-select [(value)]="setthisPerson" *ngIf="listPersons">
+            <mat-option *ngFor="let person of listPersons" [value]="person">{{person.name}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      
+        <mat-form-field appearance="fill">
+          <mat-label>Internship</mat-label>
+          <mat-select [(value)]="thisInternship" *ngIf="listInternships">
+            <mat-option *ngFor="let internship of listInternships" [value]="internship">{{internship.name}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      
+        <mat-form-field appearance="fill">
+          <mat-label>Number of Vacantion Days</mat-label>
+          <input matInput [(ngModel)]="vacationDays" name="Number of Vacation Days" placeholder="20"/>
+        </mat-form-field>
+      
+        <div id="buttonBox">
+          <button id="addB" mat-button (click)="addIntern()" routerLink="/interns"></button>
+        </div>
+      
+      </div>
+      
+    </div>
+</div>

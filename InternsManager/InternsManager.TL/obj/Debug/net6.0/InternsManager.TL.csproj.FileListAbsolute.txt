@@ -1,0 +1,14 @@
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\bin\Debug\net6.0\InternsManager.TL.deps.json
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\bin\Debug\net6.0\InternsManager.TL.runtimeconfig.json
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\bin\Debug\net6.0\InternsManager.TL.dll
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\bin\Debug\net6.0\InternsManager.TL.pdb
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\obj\Debug\net6.0\InternsManager.TL.csproj.AssemblyReference.cache
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\obj\Debug\net6.0\InternsManager.TL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\obj\Debug\net6.0\InternsManager.TL.AssemblyInfoInputs.cache
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\obj\Debug\net6.0\InternsManager.TL.AssemblyInfo.cs
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\obj\Debug\net6.0\InternsManager.TL.csproj.CoreCompileInputs.cache
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\obj\Debug\net6.0\InternsManager.TL.dll
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\obj\Debug\net6.0\refint\InternsManager.TL.dll
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\obj\Debug\net6.0\InternsManager.TL.pdb
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\obj\Debug\net6.0\InternsManager.TL.genruntimeconfig.cache
+E:\Proiecte\Interns-Manager\InternsManager\InternsManager.TL\obj\Debug\net6.0\ref\InternsManager.TL.dll

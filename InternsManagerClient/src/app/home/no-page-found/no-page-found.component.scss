@@ -1,0 +1,67 @@
+.page {
+  background-image: url("https://pixabay.com/get/gc92b29fc560bb68a5185a98a7ec38e2798c99523651f818b4c8665ea559cab6889914b869b8a9d8d0cac52bfd89c04e25a5aba8d06712258c3f3fa07a3fbda761519bcd8205877e05c331aea57b29f18_1920.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  height: 100%;
+
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.547);
+    margin: 20px 10px 20px 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+      font-size: 22pt;
+      margin: 15px 15px 15px 15px;
+    }
+
+    h2 {
+      font-size: 28pt;
+      margin: 15px 15px 15px 15px;
+    }
+
+    h4 {
+      font-size: 18pt;
+      margin: 15px 15px 15px 15px;
+    }
+
+    hr {
+      margin: auto;
+      width: 40%;
+      color: azure;
+      margin-bottom: 15px;
+    }
+
+    a {
+      font-style: normal;
+      font-weight: 700;
+      text-decoration: none;
+      color: blanchedalmond;
+      margin: 15px 15px 15px 15px;
+      align-self: center;
+    }
+
+  }
+
+  .middle:before {
+    filter: blur(30px);
+    box-shadow: inset 0 0 2500px rgba(255, 255, 255, .15);
+  }
+
+}

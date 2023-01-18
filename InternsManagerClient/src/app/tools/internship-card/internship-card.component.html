@@ -1,0 +1,27 @@
+<div *ngFor="let internship of internships;index as i" class="margin-top-10">
+    <mat-card>
+      <img mat-card-image [src]="pickPicture(i)">
+      <div id="card-content">
+        <mat-card-header>
+          <mat-card-title>{{internship.name}}</mat-card-title>
+        </mat-card-header>
+        <div class="card-description" *ngIf="internship">
+          <div id="internship-dates">({{internship.startDate | date}} - {{internship.endDate | date}})
+          </div>
+          <p> </p>
+          <div>Position: {{internship.position}}</div>
+          <div>Salary Brut: {{internship.salaryBRUT}}</div>
+          <div>Salary Net: {{getNet(internship.salaryBRUT)| number:'1.2-2'}} Lei</div>
+          <div>Number of interns: {{internsNr[i]}}</div>
+        </div>
+        <div id="buttons">
+          <button mat-icon-button (click)="deleteInternship(internship)">
+            <mat-icon>delete_forever</mat-icon>
+          </button>
+          <button mat-icon-button routerLink="/edit-records/{{internship.idInternship}}">
+            <mat-icon>edit</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-card>
+  </div>

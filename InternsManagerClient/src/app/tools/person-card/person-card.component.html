@@ -1,0 +1,34 @@
+<div *ngFor="let person of persons;index as i" class="margin-top-10">
+  <div *ngFor="let user of users;index as i">
+    <div *ngIf="user.idPerson != person.idPerson">
+      <mat-card>
+
+        <img mat-card-image [src]="person.picPath">
+        <div id="card-content">
+          <mat-card-header>
+            <mat-card-title>
+              {{person.name}}
+            </mat-card-title>
+          </mat-card-header>
+          <div class="card-description" *ngIf="person">
+            <p> </p>
+            <div>Date of Birth: {{person.dateOfBirth | date}}</div>
+            <p> </p>
+            <div>Age: {{getAge(person.dateOfBirth)}}</div>
+            <p> </p>
+            <div>Gender: {{person.gender}}</div>
+          </div>
+          <div id="buttons">
+            <button mat-icon-button (click)="deletePerson(person)">
+              <mat-icon>delete_forever</mat-icon>
+            </button>
+            <button mat-icon-button routerLink="/persons/edit/{{person.idPerson}}">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </div>
+        </div>
+
+      </mat-card>
+    </div>
+  </div>
+</div>

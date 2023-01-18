@@ -1,0 +1,110 @@
+#addPage {
+    background-image: url("https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557399_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: calc(100% - 60px);
+    margin-top: 0px;
+    padding: 30px 20px 30px 20px;
+    overflow: hidden;
+  
+    #add {
+      display: flex;
+      background-color: rgba(228, 228, 228, 0.685);
+      padding-left: 30px;
+      padding-right: 30px;
+      border-radius: 15px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed !important;
+      background-size: cover;
+      flex-direction: column;
+      width: 50%;
+      box-shadow: inset 0 0 10px 5px #acb7ca;
+      padding-top: 60px;
+  
+      h1 {
+        color: rgb(49, 49, 49);
+        margin-top: -25px;
+        margin-left: 80px;
+        margin-bottom: 40px;
+      }
+  
+      .form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: rgb(49, 49, 49);
+        padding-bottom: 9%;
+  
+        mat-form-field {
+          margin-left: 40px;
+          width: 80%;
+          margin-bottom: 5px;
+          padding-bottom: 25px;
+        }
+
+        mat-radio-button {
+          margin-left: 20px;
+        }
+  
+        #buttonBox {
+          height: 0;
+          margin-top: 0;
+          margin-bottom: 15px;
+          margin-left: calc(100% - 200px);
+  
+          #addB {
+            text-decoration: none;
+            font-size: 15pt;
+            color: #f7f9fa;
+            padding: 10px;
+            transition: all .5s;
+            perspective: 30rem;
+          }
+  
+          #addB::after {
+            display: block;
+            width: 150px;
+            height: 100%;
+            top: 4.2rem;
+            left: 0;
+            background: #e6036d34;
+            border-radius: 1.5rem;
+            transform: rotateX(80deg);
+            z-index: 2;
+          }
+  
+          #addB::before {
+            content: "Submit";
+            display: block;
+            width: 150px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgb(5, 61, 87, 0.95);
+            border-radius: 1.5rem;
+            z-index: -1;
+          }
+  
+          #addB:hover::before {
+            animation: rotate 1s;
+            transition: all .5s;
+          }
+  
+          @keyframes rotate {
+            0% {
+              transform: rotateY(180deg);
+            }
+  
+            100% {
+              transform: rotateY(360deg);
+            }
+          }
+        }
+      }
+  
+    }
+  }
+  

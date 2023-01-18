@@ -1,0 +1,32 @@
+<div *ngFor="let intern of interns;index as i" class="margin-top-10">
+    <mat-card>
+      <img mat-card-image [src]="persons[getPersonId(intern)].picPath">
+      <div id="card-content">
+        <mat-card-header>
+          <mat-card-title>
+            {{persons[getPersonId(intern)].name}}
+          </mat-card-title>
+        </mat-card-header>
+        <div class="card-description" *ngIf="intern">
+          <div id="internship-name">{{internships[getInternshipId(intern)].name}}</div>
+          <div id="internship-dates">({{internships[getInternshipId(intern)].startDate | date}} -
+            {{internships[getInternshipId(intern)].endDate | date}})
+          </div>
+          <p> </p>
+          <div>Date of Birth: {{persons[getPersonId(intern)].dateOfBirth | date}}
+            ({{getAge(persons[getPersonId(intern)].dateOfBirth)}})</div>
+          <div>Position: {{internships[getInternshipId(intern)].position}}</div>
+          <div>Salary Brut: {{internships[getInternshipId(intern)].salaryBRUT}}</div>
+          <div>Salary Net: {{getNet(internships[getInternshipId(intern)].salaryBRUT)| number:'1.2-2'}} Lei</div>
+        </div>
+        <div id="buttons">
+          <button mat-icon-button (click)="deleteIntern(intern)">
+            <mat-icon>delete_forever</mat-icon>
+          </button>
+          <button mat-icon-button routerLink="/interns/edit/{{intern.idIntern}}">
+            <mat-icon>edit</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-card>
+  </div>

@@ -1,0 +1,36 @@
+<div id="editPage">
+  <div class="edit-form">
+    <div id="edit">
+      <h1>Edit Intern</h1>
+      <div class="form">
+
+        <mat-form-field appearance="fill">
+          <mat-label>{{getPersonId(intern)?.name}}</mat-label>
+          <mat-select [(value)]="person">
+            <mat-option *ngFor="let person of listPersons" [value]="person">{{person.name}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>{{getInternshipId(intern)?.name}}</mat-label>
+          <mat-select [(value)]="thisInternship">
+            <mat-option *ngFor="let internship of listInternships" [value]="internship">{{internship.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>{{intern?.vacationDays}} Vacation Days</mat-label>
+          <mat-select [(value)]="vacationDays">
+            <mat-option *ngFor="let day of days" [value]="day">{{day}} Vacation Days</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div id="buttonBox">
+          <button id="editB" mat-button (click)="editIntern()" routerLink="/interns"></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

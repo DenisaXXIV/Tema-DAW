@@ -1,0 +1,50 @@
+<div id="page">
+  <div id="filter">
+    <div id="box">
+      <div id="container">
+
+        <h1 style="text-align: center;">Login</h1>
+
+        <mat-form-field appearance="fill" placeholder="Enter the Username">
+          <mat-label>Username</mat-label>
+          <input 
+          matInput 
+          [(ngModel)]="username" 
+          name="Username" 
+          required
+          autocomplete="on"/>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" placeholder="Enter the Password">
+          <mat-label>Password</mat-label>
+          <input 
+          matInput 
+          type="password" 
+          [(ngModel)]="password" 
+          name="Password" 
+          required
+          autocomplete="on"/>
+        </mat-form-field>
+        <div class="center">
+          <div *ngIf="LoggedIn()"><mat-icon>warning</mat-icon>
+              The email or password is not correct
+          </div>
+      </div>
+        <a href="#" (click)="forgotPassword()">Forgot password?</a>
+
+        <a [routerLink]="'/auth/register'">Don't have an account? Register now!</a>
+
+        <div id="buttonBox">
+          <button 
+          id="addB" 
+          mat-button 
+          (click)="signIn()" 
+          routerLink="" 
+          required
+          autocomplete="on"></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

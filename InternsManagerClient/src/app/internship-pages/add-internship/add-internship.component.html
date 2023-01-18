@@ -1,0 +1,40 @@
+<div id="addPage">
+
+      <div id="add">
+        <h1>Add Internship</h1>
+        <div class="form">
+          <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="inputName" name="Name" />
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Start Date</mat-label>
+            <input matInput mask="0000-M0-d0" placeholder="Ex. 2022-05-23" [(ngModel)]="inputStartDate" />
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>End Date</mat-label>
+            <input matInput mask="0000-M0-d0" placeholder="Ex. 2022-06-23" [(ngModel)]="inputEndDate" />
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Salary( BRUT)</mat-label>
+            <input currencyMask placeholder="Ex. 1750.00" matInput [(ngModel)]="inputSalaryBRUT" />
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Position</mat-label>
+            <mat-select [(ngModel)]="inputPosition" *ngIf="Positions">
+              <mat-option *ngFor="let position of Positions" [value]="position">{{position}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <div id="buttonBox">
+            <button id="addB" mat-button (click)="addInternship()" routerLink="/internships"></button>
+          </div>
+
+        </div>
+
+      </div>
+  </div>
